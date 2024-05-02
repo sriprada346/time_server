@@ -1,6 +1,7 @@
-from fastapi import FastAPI, BackgroundTasks
+from fastapi import FastAPI
 from typing import List
 import time
+import uvicorn
 
 app = FastAPI()
 current_time = time.time()
