@@ -17,7 +17,6 @@ async def get_current_time():
     formatted_time = time.strftime("%H:%M:%S", time.localtime(current_time))
     milliseconds = int((current_time - int(current_time)) * 1000)
     formatted_time_with_ms = f"{formatted_time}:{milliseconds:03d}"
-    print(formatted_time_with_ms)
     return {"time": formatted_time_with_ms}
 
 
